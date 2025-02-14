@@ -1,0 +1,270 @@
+.modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 90vw; /* Adjust max-width as needed */
+  max-height: 90vh; /* Adjust max-height as needed */
+  overflow: auto; /* Add overflow for scrollbars if content exceeds dimensions */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+/* Hide scrollbar for Safari and others */
+.modal-content {
+  scrollbar-width: thin; /* "auto" or "thin" depending on your preference */
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+.select_type {
+  width: 98% !important;
+}
+.search_addre {
+  width: 58%;
+}
+.search_label {
+  width: 100%;
+}
+.img_property {
+  height: 178px;
+  border-radius: 27px 27px 0px 0px !important;
+}
+
+.circle_color {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  color: rgb(0, 184, 31);
+}
+.sda {
+  width: 40% !important;
+}
+.property_main1 {
+  display: flex;
+  width: 50%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.01);
+  padding: 20px; /* Add padding for space around children */
+}
+
+.property_main {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly with space between them */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.01);
+
+  padding: 20px; /* Add padding for space around children */
+}
+
+.property_main > * {
+  flex: 1; /* Make each child take up equal space */
+  margin-right: 10px; /* Adjust the margin between children */
+}
+
+.property_main > *:last-child {
+  margin-right: 0; /* Remove margin from the last child */
+}
+
+.property_mainn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+}
+
+.email_address {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #768191;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+#exampleInputEmail1,
+#exampleInputPassword1 {
+  display: block;
+  padding: 15px 20px;
+}
+
+.App {
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(25% - 20px); /* 25% to show 4 cards in a row, adjust as needed */
+  margin-right: 20px; /* Space between cards */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px !important;
+  box-sizing: border-box;
+}
+
+/* Remove right margin from the last card in a row */
+.card:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* Clear float for every 4th card to start a new row */
+.card:nth-child(4n + 1) {
+  clear: left;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.card_belowmain {
+  background: #fff;
+  border-radius: 0px 0px 30px 30px;
+  padding: 0px 20px 0px 20px;
+  box-shadow: 0px 1px 5px -2px;
+}
+
+.social_icons {
+  padding: 0px 10px 0px 0px;
+}
+.circle_content {
+  /* border-radius: 50px; */
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  transform: translate(330px, 34px) !important;
+  border-radius: 50px;
+
+  border: 1px solid black;
+  background: center center / cover no-repeat;
+  opacity: 1;
+  box-shadow: rgb(0, 0, 0) 0px 2px 4px 0px;
+}
+
+.circle_con {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .circle_content {
+    transform: translate(226px, 34px) !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .circle_content {
+    transform: translate(266px, 34px) !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .circle_content {
+    transform: translate(305px, 34px) !important;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .circle_content {
+    transform: translate(500px, 34px) !important;
+  }
+}
+@media screen and (max-width: 786px) {
+  .circle_content {
+    transform: translate(226px, 34px) !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .circle_content {
+    transform: translate(206px, 34px) !important;
+  }
+  .card {
+    width: calc(33.33% - 20px);
+  }
+  .App {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .close {
+    text-align: right;
+    font-size: 32px;
+    transform: translateY(0px);
+    cursor: pointer;
+  }
+  .card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+  .App {
+    padding: 0px;
+  }
+}
+@media (max-width: 650px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+  .property_main {
+    display: grid;
+    /* justify-content: initial; */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.01);
+    padding: 0px;
+  }
+  .property_main1 {
+    display: grid;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.01);
+    padding: 0px;
+  }
+  .card-container {
+    display: grid;
+  }
+}
+
+@media (max-width: 1280px) {
+  .circle_content {
+    transform: translate(193px, 34px) !important;
+  }
+}

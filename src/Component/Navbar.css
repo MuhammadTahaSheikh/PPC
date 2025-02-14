@@ -1,0 +1,28 @@
+
+.navbar-nav .nav-link.active {
+  color: #000; 
+  border-bottom: 2px solid #000; 
+  position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #bac3d0;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-link{
+    position: relative;
+      display: inline-flex;
+      align-items: center;
+      color: #bac3d0;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+}
+
+.check{
+   
+margin: 20px;
+}
+
+
